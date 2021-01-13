@@ -36,6 +36,6 @@ jobs:
           echo test, and deploy your project.
       - name: print the env 
         run: | 
-          echo $DEV_ENV
+          echo ${{secrets.DEV_ENV}}
 
       
