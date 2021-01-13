@@ -37,7 +37,7 @@ jobs:
 
       - name: print the env 
         run: | 
-          echo ${{secrets.DEV_ENV}} >>.env
+          echo -e ${{secrets.DEV_ENV}} >>.env
           cat .env 
 
       
