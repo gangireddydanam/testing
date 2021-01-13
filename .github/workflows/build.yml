@@ -34,9 +34,10 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
-          
+
       - name: print the env 
         run: | 
-          echo ${{secrets.DEV_ENV}}
+          echo ${{secrets.DEV_ENV}} >.env
+          cat .env 
 
       
