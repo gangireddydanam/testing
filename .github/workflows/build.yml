@@ -37,7 +37,6 @@ jobs:
 
       - name: print the env 
         run: | 
-          #echo -e ${{secrets.DEV_ENV}} >>.env
           cat >.env <<'EOL'
           ${{secrets.DEV_ENV}}
           EOL
